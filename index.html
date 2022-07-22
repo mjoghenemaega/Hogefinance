@@ -11,7 +11,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<!-- For Resposive Device -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 		<title>HOGE Finance - Official HOGE Finance Website!</title>
 
 		<!-- Favicon -->
@@ -25,13 +24,13 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet'>
 		<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />s
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		
 		<!-- responsive style sheet -->
 		<link rel="stylesheet" type="text/css" href="css/responsive.css">
 		<!-- Color Css -->
 		<link rel="stylesheet" type="text/css" href="css/color-one.css">
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 
 		<!-- Fix Internet Explorer ______________________________________-->
@@ -82,7 +81,7 @@
 							    		  	  <a class="nav-link js-scroll-trigger" href="#apps-review"">Merchandise Store</a>
 							    		  	</li>
 							    		  	<li class="nav-item">
-							    		  	  <a class="nav-link js-scroll-trigger" href="#contact">Media</a>
+							    		  	  <a class="nav-link js-scroll-trigger" href="#media">Media</a>
 							    		  	</li>
 											  <li class="nav-item">
 							    		  	  <a class="nav-link js-scroll-trigger" href="#contact">Contact us</a>
@@ -227,7 +226,7 @@
 
 
 
-				 <div class="our-feature-two" id="services">
+				 <!-- <div class="our-feature-two" id="services">
 					<div class="container">
 						<div class="theme-title text-center">
 							<h2><span>Ecosystem Overview</span></h2>
@@ -303,13 +302,13 @@
 
 							 </div></div></div></div> 
 					</div> 
-				</div> 
+				</div>  -->
 					<!--
 				=====================================================
 					Hoge products
 				=====================================================
 				-->
-				<div class="about-cryto style-two" id="about">
+				<div class="about-cryto style-two" >
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-6 order-lg-last">
@@ -364,7 +363,58 @@
 				
 
 				</div>
-					<!--
+<!-- 				
+=======================================
+				ABOUT HOGE
+				===============================  -->
+
+
+				<div class="theme-counter1">
+					<div class="container" id="about">
+						<div class="theme-title text-center" style="padding-top: 2rem;">
+							<h2><span>ABOUT HOGE</span></h2>
+						</div>
+						<div class="bg-image">
+							<br>
+							
+							<br><br>
+
+							<div class="row theme-title">
+								
+								
+								<div class="col-lg-6 order-lg-last"  style="color: #ffae00; text-align: left;" >
+								
+									<p style="font-size:19px; color: #fff">80 days ago, we, the community of Hoge, had our first election<br> In many ways, it was the true start of vision that began some 17 months ago. We've grown from "Like Doge, but Defi " tobuying the founddational groundwork to one of the most ambitious, grandest visions that began</p>
+								
+								</div>
+								<div class="col-lg-6 order-lg-first" >
+								  <p style="font-size:19px; color: #fff">HOGE has 2% tax on all transactions to prevent price manipulation and encourage holding.The 2% tax is then split as a weighted distribution between all holders and the burn address.</p>
+								
+								</div>
+							</div>
+							
+
+							<!-- <div class="row theme-title">
+								
+								<div class="col-lg-7 order-lg-last"  style="color: #ffae00; text-align: left;" >
+								     <p>399363318409 HOGE in Circulation</p>
+								</div>
+								<div class="col-lg-5 order-lg-first" style="color: red" >
+									<p><i class="fa fa-gear fa-spin" style="font-size:24px"></i>600636681591 HOGE Burned</p>
+								    <p><i class="fa fa-gear fa-spin" style="font-size:24px"></i> <p>399363318409 HOGE in Circulation</p></p>
+								    <p>HOGE has 2% tax on all transactions to prevent price manipulation and encourage holding.The 2% tax is then split as a weighted distribution between all holders and the burn address.</p>
+								</div>
+							</div> -->
+
+	
+						</div> <!-- /.bg-image -->
+					</div> <!-- /.container -->
+					
+				</div> <!-- /.theme-counter -->
+
+
+					
+				<!--
 				=====================================================
 					Theme Counter
 				=====================================================
@@ -380,23 +430,58 @@
 							
 							<img class="rotate" src="images/hogelog0.png">
 							<h4><span>Current Token Burn</span><br> Updated on page refresh</h4>
-
-							
-						
+							<br><br>
 
 							<div class="row theme-title">
 								
+								
 								<div class="col-lg-7 order-lg-last"  style="color: #ffae00; text-align: left;" >
-									<p>39.9363% In Circulation</p>
-									<p>0.7987% Redistributed to ERC-20 Holders Every Transaction</p>
-									<p>399363318409 HOGE in Circulation</p>
+								
+                                  <div id="piechart"  style="color: white;" ></div>
 								</div>
-								<div class="col-lg-5 order-lg-first" style="color: red" >
-									<p><i class="fa fa-gear fa-spin" style="font-size:24px"></i>60.0637% Burned</p>
-									<p>1.2013% Burned Every Transaction</p>
-									<p>600636681591 HOGE Burned</p>
+								<div class="col-lg-5 order-lg-first" >
+									<p style="color: red"><i class="fa fa-gear fa-spin" style="font-size:24px;color: red"></i> 600636681591 HOGE Burned</p>
+								    <p style="color: rgb(66, 252, 66)"><i class="fa fa-gear fa-spin" style="font-size:24px; color: rgb(66, 252, 66)"></i> 399363318409 HOGE in Circulation</p>
+								    <p style="font-size:19px; color: #ffae00">HOGE has 2% tax on all transactions to prevent price manipulation and encourage holding.The 2% tax is then split as a weighted distribution between all holders and the burn address.</p>
+								
 								</div>
 							</div>
+							<script type="text/javascript">
+								// Load google charts
+								google.charts.load('current', {'packages':['corechart']});
+								google.charts.setOnLoadCallback(drawChart);
+								
+								// Draw the chart and set the chart values
+								function drawChart() {
+								  var data = google.visualization.arrayToDataTable([
+								  ['Task', 'Hours per Day'],
+								  ['Total Burned', 60],
+								  [' Redistributed to ERC-20 Holders Every Transaction', 0.7987],
+								  [' Burned Every Transaction', 1.2013],
+								  ['In Circulation', 39.9363]
+								  
+								]);
+								
+								  // Optional; add a title and set the width and height of the chart
+								  var options = {'title':' HOGE Visuals', 'width':450, 'height':400,backgroundColor: '#ffae00', is3D: true};
+								
+								  // Display the chart inside the <div> element with id="piechart"
+								  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+								  chart.draw(data, options);
+								}
+								</script>
+
+							<!-- <div class="row theme-title">
+								
+								<div class="col-lg-7 order-lg-last"  style="color: #ffae00; text-align: left;" >
+								     <p>399363318409 HOGE in Circulation</p>
+								</div>
+								<div class="col-lg-5 order-lg-first" style="color: red" >
+									<p><i class="fa fa-gear fa-spin" style="font-size:24px"></i>600636681591 HOGE Burned</p>
+								    <p><i class="fa fa-gear fa-spin" style="font-size:24px"></i> <p>399363318409 HOGE in Circulation</p></p>
+								    <p>HOGE has 2% tax on all transactions to prevent price manipulation and encourage holding.The 2% tax is then split as a weighted distribution between all holders and the burn address.</p>
+								</div>
+							</div> -->
 
 							<div class="counter-wrapper">
 								<div class="row">
@@ -442,7 +527,52 @@
 						</div>
 				
 				</div>
-
+<style>
+	.sticky-social{
+  position:fixed;
+  top:100px;
+  right:0px;
+  padding:0px;
+  margin:0px;
+  z-index: 3;
+  border-radius: 5px;
+}
+.social{
+  list-style:none;
+}
+.social li{
+  padding:5px 5px;
+  font-size:25px;
+  transition:all 0.8s ease-in-out;
+}
+.social li:hover{
+    margin-left:-30px;
+ box-shadow:2px 5px 10px grey;
+}
+.social li:hover .fa{
+    margin-left:20px;
+  
+}
+.fa{
+  color:#fff;
+  transition:all 0.8s ease-in-out;
+}
+.fb{
+  background-color:#3C5A98;
+}
+.twitter{
+    background-color:#1EA1F2;
+}
+.insta{
+    background-color:#DC4F42;
+}
+.pin{
+    background-color:#CB2128;
+}
+.vim{
+    background-color:#59BFBE;
+}
+</style>
 
 			
 			<!--
@@ -451,12 +581,21 @@
 				=====================================================
 				-->
 				<div class="our-work-progress bg-color" id="progress">
+					<div class="sticky-social">
+						<ul class="social">
+							  <li class="twitter"><a href="#"><img style="margin: auto;" src="images/uniswap.png" height="45px" width= "45px"></a></li>
+							<li class="insta"><a href="#"><img style="margin: auto;" src="images/pancakesawp.png" height="45px" width= "45px"></a></li>
+							<li class="pin"><a href="#"><img style="margin: auto;" src="images/dextoolslogo.png" height="45px" width= "45px"></a></li>
+							
+						  </ul>
+						</div>
 					<div class="main-wrapper clearfix">
 						<div class="section-title-wrapper clearfix">
 							<div class="theme-title">
 								
 								<h2><span>HOW TO </span> BUY</h2>
 								<br>
+								
 
 
 								<div class="text-center container">
@@ -596,6 +735,96 @@
 					
 			
 				</div> <!-- /.our-work-progress -->
+				<br>
+
+				<div id="media">
+					<br>
+					<div class="theme-title text-center">
+								
+						<h2 ><span>MEDIA</span> </h2>
+						<br>
+					</div>
+					<div class="tz-gallery">
+
+						<div class="row">
+				
+							<div class="col-sm-12 col-md-4">
+								<a class="lightbox" href="https://www.usatoday.com/videos/sponsor-story/hoge-finance/2021/08/23/how-hoge-incentivizes-long-term-holdings/8245116002/">
+									<img src="images/buying hoge.jpg"></a>
+							</div>
+							<div class="col-sm-6 col-md-4">
+								<a class="lightbox" href="https://www.usatoday.com/story/sponsor-story/hoge-finance/2021/10/27/hoge-aerospace-institute-hai-build-program-aspiring-explorers/6175716001/">
+									<img src="images/Hai.jpg" width="667px" height="370px"></a>
+							</div>
+							<div class="col-sm-6 col-md-4">
+								<a class="lightbox" href="https://www.yahoo.com/now/hoge-announces-collaboration-defi-angels-105900972.html">
+									<img src="images/hoge joins.jpg">	</a>
+							</div>				
+						</div>
+				
+					</div>
+					<button id="b39" class="learn-more  ">View More Media <i class="flaticon-right-thin"></i></button>
+								
+
+				</div>
+				
+
+
+
+
+				<style>
+					
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 667px;
+	height: 227px;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #ffae005e;
+	
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+				  </style>
 
 
 
